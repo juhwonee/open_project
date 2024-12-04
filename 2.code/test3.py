@@ -39,11 +39,17 @@ def is_thumb_index_touching(hand):
     thumb_tip = hand.landmark[4]
     index_tip = hand.landmark[8]
     distance = math.sqrt((thumb_tip.x - index_tip.x) ** 2 + (thumb_tip.y - index_tip.y) ** 2)
-    return distance < 0.05  # 붙어 있는 거리 기준
+    return distance < 0.06  # 붙어 있는 거리 기준 살짝 완화
 
 
 def recognize_gesture(fingers_status, thumb_index_touching):
-    if thumb_index_touching:
+    """
+    손 동작을 인식하여 제스처 이름 반환
+    """
+    print(f"Finger status: {fingers_status}, Thumb-Index touching: {thumb_index_touching}")
+
+    # 엄지와 검지가 붙고 나머지 손가락이 접힌 경우 'three'
+    if thumb_index_touching and fingers_status == [1, 1, 0, 0, 0]:
         return 'three'
     if fingers_status == [0, 0, 0, 0, 0]:
         return 'fist'
@@ -55,6 +61,7 @@ def recognize_gesture(fingers_status, thumb_index_touching):
         return 'peace'
     elif fingers_status == [1, 1, 0, 0, 0]:
         return 'standby'
+    return 'unknown'
 
 
 # 웹캠 설정
