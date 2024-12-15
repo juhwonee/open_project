@@ -93,7 +93,8 @@ while video.isOpened():
                     fingers_status = get_finger_status(hand_landmarks)
                     thumb_index_touching = is_thumb_index_touching(hand_landmarks)
                     gesture = recognize_gesture(fingers_status, thumb_index_touching)
-                    #print(f"Gesture: {gesture}")
+                    print(f"Gesture: {gesture}")
+                    print("Success!!")
 
                     # OK 제스처가 감지되면 슬라이드 이동
                     current_time = time.time()
