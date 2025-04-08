@@ -1,4 +1,4 @@
-# open_project_MinsooKang, Janginhwan
+# open_project_MinsooKang, Janginhwanm, JungJuhyun
 2024.2학기 오픈소스소프트웨어 프로젝트 
 
 1. 주제
