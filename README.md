@@ -1,4 +1,5 @@
-# 2024 2학기 open_project : MinsooKang, Janginhwanm, Jeongjuhwon
+# 2024 2학기 open_project 
+## Member : MinsooKang, Janginhwanm, Jeongjuhwon
 
 ### Title
 손 제스처 기반 슬라이드 프레젠테이션
