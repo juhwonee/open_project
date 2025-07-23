@@ -1,5 +1,5 @@
 # 2024 2학기 open_project 
-## Member : MinsooKang, Janginhwanm, Jeongjuhwon
+## Member : MinsooKang, JangInhwanm, JeongJuHwon
 
 # 🖐️ Hand Gesture-based Slide Presentation Controller
 
